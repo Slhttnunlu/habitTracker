@@ -10,5 +10,4 @@ FROM amazoncorretto:23-alpine-jdk
 
 COPY --from=build /usr/src/app/target/*.jar /app.jar
 
-ENTRYPOINT["java","-jar","/app.jar"]
-
+ENTRYPOINT ["java","-jar","/app.jar"]
